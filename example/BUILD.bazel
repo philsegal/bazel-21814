@@ -1,0 +1,10 @@
+load("@rules_jvm_external//:defs.bzl", "artifact")
+java_binary(
+    name = "checksum",
+    srcs = glob(["*.java"]),
+    main_class = "com.github.carolosf.bazel21814.CheckSum",
+    deps = [
+        artifact("info.picocli:picocli"),
+        #"@maven//:info_picocli_picocli"
+    ],
+)

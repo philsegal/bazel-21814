@@ -5,7 +5,6 @@ java_binary(
     main_class = "com.github.carolosf.bazel21814.CheckSum",
     deps = [
         artifact("info.picocli:picocli"),
-        artifact("org.springframework.boot:spring-boot-actuator"),
         #"@maven//:info_picocli_picocli"
     ],
 )
